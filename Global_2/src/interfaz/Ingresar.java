@@ -46,7 +46,7 @@ public class Ingresar extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         rbtn_si = new javax.swing.JRadioButton();
         rbtn_no = new javax.swing.JRadioButton();
-        jDateChooser1 = new com.toedter.calendar.JDateChooser();
+        calendario = new com.toedter.calendar.JDateChooser();
         jLabel9 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         jLabel33 = new javax.swing.JLabel();
@@ -154,7 +154,7 @@ public class Ingresar extends javax.swing.JFrame {
         rbtn_no.setForeground(new java.awt.Color(255, 255, 255));
         rbtn_no.setText("NO");
         getContentPane().add(rbtn_no, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 400, -1, -1));
-        getContentPane().add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 230, 119, -1));
+        getContentPane().add(calendario, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 230, 119, -1));
 
         jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
@@ -268,12 +268,12 @@ public class Ingresar extends javax.swing.JFrame {
     private javax.swing.JButton btn_agregar;
     private javax.swing.JButton btn_salir;
     private javax.swing.ButtonGroup buttonGroup1;
+    private com.toedter.calendar.JDateChooser calendario;
     private javax.swing.JLabel fondo;
     private javax.swing.JComboBox<String> hora;
     private javax.swing.JTextField in_nombre;
     private javax.swing.JTextField in_nombre_instrum;
     private javax.swing.JTextField in_tipo_instrum;
-    private com.toedter.calendar.JDateChooser jDateChooser1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
