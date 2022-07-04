@@ -9,8 +9,8 @@ import java.util.Date;
  * @author Asus
  */
 public class Artista extends SerCantor {
-    
     ArrayList <Instrumento> usa;
+
     public boolean hacerCantar(){
         cantar();
         return true;

@@ -7,9 +7,10 @@ public class Instrumento implements Serializable {
     public String nombre;
     public String tipo;
 
-    public Instrumento(String nombre) {
-        this.nombre = nombre;
+    public Instrumento() {
     }
+
+    
     
     public Instrumento(String nombre, String tipo) {
         this.nombre = nombre;

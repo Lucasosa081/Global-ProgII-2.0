@@ -1,22 +1,15 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package mvc;
 
+import static interfaz.Ingresar.toCalendar;
 import java.io.Serializable;
 import java.util.Calendar;
 import java.util.Date;
 
-/**
- *
- * @author Asus
- */
 public abstract class SerCantor implements PuedeCantar, Serializable{
     public final String nombre;
     public String tipo;
     public final Date fecha_de_nacimiento;
-    
     public final Momento cuando;
     
     @Override
