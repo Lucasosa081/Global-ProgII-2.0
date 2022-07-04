@@ -1,0 +1,48 @@
+
+package mvc;
+
+import java.io.Serializable;
+import java.util.Calendar;
+
+public class Momento implements Serializable{
+    public String tipo;
+    private boolean alegria; 
+
+    public String horario(){
+         String horaD;
+         //Guardar el dia y la hora actual
+         Calendar diaYHora = Calendar.getInstance();
+         String hora = Integer.toString(diaYHora.get(Calendar.HOUR_OF_DAY)) + ":"+Integer.toString(diaYHora.get(Calendar.MINUTE));
+         
+         //Segun la hora del dia que sea, decir si es de mañana o de tarde
+         if(diaYHora.get(Calendar.HOUR_OF_DAY)<12){
+             horaD = "Mañana";
+         }else{
+             horaD = "Tarde";
+         }
+         
+        return horaD;
+    }
+    
+    
+    
+    public Momento(String tipo, boolean alegria) {
+        this.tipo = horario();
+        this.alegria = alegria;
+    }
+
+    public boolean getAlegria() {
+        return alegria;
+    }
+
+    public void setAlegria(boolean alegria) {
+        this.alegria = alegria;
+    }
+    
+    
+    
+    
+    
+    
+    
+}
